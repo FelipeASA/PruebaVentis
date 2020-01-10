@@ -16,7 +16,9 @@ EDIT ON
     margin-right:3%;
     margin-top: 2%;
     
-    text-align: center;
+    
+   
+   text-align: center;
 }
 .square1{
     font-family: sans-serif;
@@ -28,6 +30,7 @@ EDIT ON
       margin-right:3%;
       margin-top: 2%;
     
+    
   }
 
 .square:last-child{
@@ -38,15 +41,30 @@ EDIT ON
     display:block;
     padding-top:100%;
   float: left; 
+  width: 10%;
+  background-color: indigo;
+  margin-left: -10px;
   
+}
+
+.rectangulo{
+  font-family: sans-serif;
+  color: white;
+  border: solid white 2px;
+  padding: 1em;
+    float:left;
+    width: 30px;
+    margin-right:3%;
+    margin-top: 2%;
 }
 
 .rotate1{
     color: green;
 }
-.rotate2{
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+.span1{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
 }
 .rotate3{
     -webkit-transform: rotate(-90deg);
