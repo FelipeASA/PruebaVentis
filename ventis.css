@@ -6,15 +6,18 @@ EDIT ON
 .wrapper{
   width: 27%;
   margin: 0 auto;
+  position: relative;
 }
 .square{
   font-family: sans-serif;
   border: solid black 2px;
   padding: 1em;
     float:left;
+    height: 30px;
     width: 30px;
     margin-right:3%;
     margin-top: 2%;
+    position: relative;
     
     
    
@@ -33,44 +36,71 @@ EDIT ON
     
   }
 
-.square:last-child{
-  margin-right:0;
+.recttop{
+  position: absolute;
+  padding: 3px;
+  width: 56px;
+  height: 10%;
+  margin-top: 0;
+  border-bottom: 2px solid black;
+  top: 0;
+  left: 0;
+  background-color: lawngreen;
 }
-.square:before{
-    content:"";
-    display:block;
-    padding-top:100%;
-  float: left; 
-  width: 10%;
-  background-color: indigo;
-  margin-left: -10px;
-  
+.rectleft{
+  position: absolute;
+  padding: 1px;
+  right:0;
+  top:1%;
+  height: 59px;
+  width: 10px;
+  background-color: purple;
+  border-left: 2px solid #000;
+}
+.rectbott{
+  position: absolute;
+  padding: 3px;
+  width: 56px;
+  height: 10%;
+  margin-top: 0;
+  border-top: 2px solid black;
+  left:0;
+  bottom: 0;
+  background-color: crimson;
+}
+.rectright{
+  position: absolute;
+  padding: 1px;
+  left:1%;
+  top:1%;
+  height: 59px;
+  width: 10px;
+  background-color: gold;
+  border-right: 2px solid #000;
 }
 
-.rectangulo{
-  font-family: sans-serif;
-  color: white;
-  border: solid white 2px;
-  padding: 1em;
-    float:left;
-    width: 30px;
-    margin-right:3%;
-    margin-top: 2%;
-}
 
-.rotate1{
-    color: green;
-}
+
 .span1{
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     position: absolute;
+    
 }
-.rotate3{
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+.span2{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    
 }
-.rotate4{
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+.span3{
+    -webkit-transform: rotate(125deg);
+    transform: rotate(125deg);
+    position: absolute;
 }
+.span4{
+    -webkit-transform: rotate(-125deg);
+    transform: rotate(-125deg);
+    position: absolute;
+}
+
